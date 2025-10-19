@@ -1,8 +1,12 @@
 body {
   display: flex;
   margin: 0;
+  overflow: none;
 }
 
 video {
   filter: invert(1);
+  width: 50dvw;
+  height: 100dvh;
+  object-fit: cover;
 }
