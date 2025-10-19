@@ -1,0 +1,8 @@
+body {
+  display: flex;
+  margin: 0;
+}
+
+video {
+  filter: invert(1);
+}
