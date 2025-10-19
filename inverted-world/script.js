@@ -1,8 +1,6 @@
 navigator.mediaDevices.getUserMedia({ 
   video: { 
-    facingMode: { exact: "environment" },
-    width: { exact: innerWidth / 2 },
-    height: { exact: innerHeight }
+    facingMode: { exact: "environment" }
   } 
 }).then((stream) => {
   const videos = document.querySelectorAll("video");
