@@ -1,0 +1,13 @@
+{
+  "name": "Invert world",
+  "short_name": "Inverter",
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}
