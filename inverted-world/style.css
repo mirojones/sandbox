@@ -6,7 +6,7 @@ body {
 
 video {
   filter: invert(1);
-  width: 50dvw;
+  width: 100dvw;
   height: 100dvh;
   object-fit: cover;
 }
