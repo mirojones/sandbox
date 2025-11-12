@@ -4,13 +4,13 @@ const csv = document.querySelector('pre'),
   log = ev => csv.textContent += [ Date.now(), ev.alpha, ev.beta, ev.gamma ] + '\n';
 
 start.addEventListener('click', () => {
-  start.disabled = '';
+  start.setAttribute('disabled', '');
   stop.removeAttribute('disabled');
   addEventListener('deviceorientation', log);
 });
 
 stop.addEventListener('click', () => {
   start.removeAttribute('disabled');
-  stop.disabled = '';
+  stop.setAttribute('disabled', '');
   removeEventListener('deviceorientation', log);
 });
