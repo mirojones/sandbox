@@ -1,7 +1,7 @@
 const csv = document.querySelector('pre'),
   start = document.getElementById('start'),
   stop = document.getElementById('stop'),
-  log = ev => csv.textContent = [ Date.now(), ev.alpha, ev.beta, ev.gamma ] + '\n' + csv.textContent;
+  log = ev => csv.textContent = [ Date.now(), ev.alpha, ev.beta, ev.gamma ];
 
 start.addEventListener('click', () => {
   start.setAttribute('disabled', '');
