@@ -6,7 +6,14 @@ const csv = document.querySelector('pre'),
 start.addEventListener('click', () => {
   start.setAttribute('disabled', '');
   stop.removeAttribute('disabled');
-  addEventListener('deviceorientation', log);
+  DeviceMotionEvent.requestPermission()
+    .then(response => {
+      if (response === 'granted')
+        addEventListener('deviceorientation', log);
+      else
+        alert('not granted');
+    })
+    .catch(alert)
 });
 
 stop.addEventListener('click', () => {
